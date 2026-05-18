@@ -1,0 +1,24 @@
+
+workers: 12
+seed: 42
+resume: false
+checkpoint: ""
+verbose: true
+save_loc: "."
+accelerator_config: "train_accelerator_wandb_default.yaml"
+dataset_config: "train_dataset.yaml"
+augmentation_config: "train_augmentation_default.yaml"
+
+feature_extractor: "ir_101"
+feature_extractor_input_size: [112, 112]
+embedding_size: 512
+margin_head: "funface"
+
+base_lr: 1.0e-1
+weight_decay: 5.0e-4
+momentum: 0.9
+warmup: 0
+total_epochs: 24
+step_scheduler_theta: 0.1
+grad_norm: -1
+batch_size: 512

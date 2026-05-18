@@ -1,0 +1,6 @@
+dataset_name: "webface4m"
+validation_set: ["lfw", "cplfw", "xqlfw"]
+validation_paths:
+  lfw: "https://huggingface.co/datasets/LSIbabnikz/lfw_bin/resolve/main/shard-{000000..000002}.tar"
+  cplfw: "https://huggingface.co/datasets/LSIbabnikz/cplfw_bin/resolve/main/shard-{000000..000002}.tar"
+  xqlfw: "https://huggingface.co/datasets/LSIbabnikz/xqlfw_bin/resolve/main/shard-{000000..000002}.tar"

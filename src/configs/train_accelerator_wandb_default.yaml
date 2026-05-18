@@ -1,0 +1,14 @@
+accelerator_automatic_checkpoint_naming: true
+accelerator_total_limit: 1
+accelerator_iteration: null
+accelerator_timeout_seconds: 1200
+accelerator_use_stateful_dataloader: false
+accelerator_split_batches: false
+accelerator_dispatch_batches: false
+accelerator_non_blocking: true
+accelerator_mixed_precision: "fp16"
+
+wandb: false
+project_name: ""
+wandb_entity: ""
+wandb_group: ""

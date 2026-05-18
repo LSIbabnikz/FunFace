@@ -1,0 +1,40 @@
+augment: true
+ada_augment: false
+augmentor:
+  probabilities:
+    color_jitter: 0.2
+    affine: 0.2
+    grayscale: 0.05
+    noise: 0.2
+    erasing: 0.2
+    low_res: 0.2
+    crop: 0.2
+  color_jitter:
+    brightness: 0.6
+    contrast: 0.4
+    saturation: 0.4
+    hue: 0.01
+  affine:
+    degrees: [-5, 5]
+    translate: [0.05, 0.05]
+    scale: [0.98, 1.02]
+    fill: -1
+  grayscale:
+    num_output_channels: 3
+  noise:
+    min_noise: 0.05
+    max_noise: 0.2
+    noise_types: ["uniform", "gaussian"]
+    epsilon: 0.001
+  erasing:
+    p: 1.0
+    scale: [0.01, 0.1]
+    value: -1
+  low_res:
+    base_size: 112
+    interpolation_types: ["bilinear", "nearest", "nearest_exact", "bilinear", "bicubic"]
+  crop:
+    fill: -1
+    size: [112, 112]
+    scale: [0.5, 1.0]
+    ratio: [0.75, 1.3333333333333333]
